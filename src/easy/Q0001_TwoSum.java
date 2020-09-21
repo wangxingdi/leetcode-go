@@ -6,6 +6,8 @@ import java.util.Arrays;
 import java.util.HashMap;
 
 /**
+ * Day1: 今天是系统性刷题的第一天，很兴奋。
+ *
  * 给定一个整数数组 nums 和一个目标值 target，请你在该数组中找出和为目标值的那 两个 整数，并返回他们的数组下标。
  * 你可以假设每种输入只会对应一个答案。但是，数组中同一个元素不能使用两遍。
  *
@@ -23,14 +25,14 @@ public class Q0001_TwoSum {
     public static void main(String[] args) {
         String timestamp = DateUtils.getTimestamp();
         System.out.println("===当前时间戳: "+timestamp);
-        Q0001_TwoSum swoSum = new Q0001_TwoSum();
+        Q0001_TwoSum clazz = new Q0001_TwoSum();
         int[] nums = {2, 7, 11, 15};
         int target = 9;
         //方式1
-        int[] res_20200920211143 = swoSum.twoSum_20200920211143(nums, target);
+        int[] res_20200920211143 = clazz.twoSum_20200920211143(nums, target);
         System.out.println(Arrays.toString(res_20200920211143));
         //方式2
-        int[] res_20200920212126 = swoSum.twoSum_20200920212126(nums, target);
+        int[] res_20200920212126 = clazz.twoSum_20200920212126(nums, target);
         System.out.println(Arrays.toString(res_20200920212126));
     }
 
