@@ -15,7 +15,7 @@ import java.util.*;
  * 输入: [2,2,1,1,1,2,2]
  * 输出: 2
  */
-public class Q169_MajorityElement {
+public class Q0169_MajorityElement {
 
     public static void main(String[] args) {
         int[] arr = {2,2,1,1,1,2,2};

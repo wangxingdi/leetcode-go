@@ -11,7 +11,7 @@ import java.util.List;
  * 1. 第一行肯定有且仅有一个1；
  * 2. 除第一行之外的其余行，第一个元素和最后一个元素都是1，其他元素都是左上角和右上角的两数之和；
  */
-public class Q118_PascalsTriangle {
+public class Q0118_PascalsTriangle {
 
     public static void main(String[] args) {
         List<List<Integer>> res = generate(5);

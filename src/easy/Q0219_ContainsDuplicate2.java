@@ -15,7 +15,7 @@ import java.util.Set;
  * 疑问1：使用暴力方式求解，很可能会遇到运算时间超时的情况；
  * 疑问2：因为需要保证两个目的元素的下标差距不能超过k，那么就无法使用先排序再遍历的方式，除非在排序时记录原始下标；
  */
-public class Q219_ContainsDuplicate2 {
+public class Q0219_ContainsDuplicate2 {
 
     public static void main(String[] args) {
         int[] arr = {1, 2, 3, 1};

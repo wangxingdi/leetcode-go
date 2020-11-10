@@ -7,7 +7,7 @@ import java.util.List;
 /**
  * 杨辉三角的第n+1行
  */
-public class Q119_PascalsTriangle2 {
+public class Q0119_PascalsTriangle2 {
 
     public static void main(String[] args) {
         List<Integer> res = getRow(4);

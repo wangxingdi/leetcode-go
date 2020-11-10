@@ -24,7 +24,7 @@ import java.util.List;
  * =======================
  * 思考1：需要判断一个元素和其后面的元素是否连续
  */
-public class Q228_SummaryRanges {
+public class Q0228_SummaryRanges {
 
     public static void main(String[] args) {
         int[] arr = {0,1,2,4,5,7};

@@ -13,10 +13,10 @@ import java.util.Set;
  * 输入: [1,2,3,1]
  * 输出: true
  */
-public class Q217_ContainsDuplicate {
+public class Q0217_ContainsDuplicate {
 
     public static void main(String[] args) {
-        Q217_ContainsDuplicate solution = new Q217_ContainsDuplicate();
+        Q0217_ContainsDuplicate solution = new Q0217_ContainsDuplicate();
         int[] arr = {1,2,5,9,7,5};
         System.out.println(solution.containsDuplicate_1(arr));
     }

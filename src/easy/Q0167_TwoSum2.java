@@ -17,7 +17,7 @@ import java.util.Map;
  * 输出: [1,2]
  * 解释: 2 与 7 之和等于目标数 9 。因此 index1 = 1, index2 = 2 。
  */
-public class Q167_TwoSum2 {
+public class Q0167_TwoSum2 {
 
     /**
      * 借助HashMap完成一次遍历得出结果
