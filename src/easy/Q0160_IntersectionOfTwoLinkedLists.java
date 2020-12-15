@@ -10,38 +10,49 @@ public class Q0160_IntersectionOfTwoLinkedLists {
 
     public static void main(String[] args) {
         Q0160_IntersectionOfTwoLinkedLists clazz = new Q0160_IntersectionOfTwoLinkedLists();
-        ListNode a = new ListNode(8);
+        ListNode a1 = new ListNode(4);
+        ListNode a2 = new ListNode(1);
 
-        ListNode b = new ListNode(4);
-        ListNode b1 = new ListNode(1);
+        ListNode b1 = new ListNode(5);
+        ListNode b2 = new ListNode(0);
+        ListNode b3 = new ListNode(1);
 
-        ListNode b3 = new ListNode(4);
-        ListNode b4 = new ListNode(5);
-        b3.next = b4;
-        a.next = b3;
-        b1.next = a;
-        b.next = b1;
+        ListNode c1 = new ListNode(8);
+        ListNode c2 = new ListNode(4);
+        ListNode c3 = new ListNode(5);
 
-        System.out.println(clazz.getIntersectionNode_20201209_2(a, b));
+        c1.next = c2;
+        c2.next = c3;
+
+        a1.next = a2;
+        a2.next = c1;
+
+        b1.next = b2;
+        b2.next = b3;
+        b3.next = c1;
+
+        System.out.println(clazz.getIntersectionNode_20201209_1(a1, b1));
     }
 
     /**
      * 暴力破解
-     * 不知道为什么，该方法在leetcode上测试失败
+     * 不知道为什么，该方法在leetcode上测试失败 -- 原因找到，headB没有重置
      * @param headA
      * @param headB
      * @return
      */
     public ListNode getIntersectionNode_20201209_1(ListNode headA, ListNode headB) {
+        ListNode headBt = headB;
         while(headA!=null){
-            while(headB!=null){
-                if(headA == headB){
+            while(headBt!=null){
+                if(headA == headBt){
                     return headA;
                 }else{
-                    headB = headB.next;
+                    headBt = headBt.next;
                 }
             }
             headA = headA.next;
+            headBt = headB;
         }
         return null;
     }
